@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>HOME</title>
+	<title>CALL FOR PAPERS</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,7 +18,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css" rel="stylesheet" >
     <link href="css/theme.css" rel="stylesheet" type="text/css" media="all">
 
-	<!-- 调用Nivoslider插件 -->
+	<script type="text/javascript" src="js/jquery.nivo.slider.js">
+		$(window).load(function () {
+			$('#slider').nivoSlider();
+		});
+		$(function () {
+			//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+			$(function () {
+				$(window).scroll(function () {
+					if ($(window).scrollTop() > 100) {
+						$("#back-to-top").fadeIn(1500);
+					} else {
+						$("#back-to-top").fadeOut(1500);
+					}
+				});
+				//当点击跳转链接后，回到页面顶部位置
+				$("#back-to-top").click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 1000); //1000代表1秒时间回到顶点
+					return false;
+				});
+			});
+		});
+	</script>
 	<script type="text/javascript">
 		$(window).load(function () {
 			$('#slider').nivoSlider();
@@ -36,7 +59,7 @@
     }
     .swiper-slide {
       text-align: center;
-      font-size: 28px;
+      font-size: 18px;
       background: #fff;
 
       /* Center slide text vertically */
@@ -55,9 +78,7 @@
     }
   </style>
 </head>
-
-<body>
-    <header>
+	 <header>
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -72,27 +93,28 @@
 
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">HOME</a></li>
-                <li><a href="CallForPapers.html">CALL FOR PAPERS</a></li>
-                <li><a href="TOI.html">TOPICS OF INTEREST</a></li>
-                <li><a href="WORKSHOP.html">WORKSHOP COMMITEE</a></li>
+				  <li class="active"><a href="index.html">HOME</a></li>
+				  <li><a href="CallForPapers.html">CALL FOR PAPERS</a></li>
+                  <li><a href="TOI.html">TOPICS OF INTEREST</a></li>
+                  <li><a href="WORKSHOP.html">WORKSHOP COMMITEE</a></li>
               </ul>
             </div>
           </div>
         </nav>
-	</header>
-	<div class="slider">
-		<div class="slider-wrapper theme-default">
-			<div id="slider" class="nivoSlider">
-				<img src="images/ITNAC.jpg" alt="" />
-				<img src="images/2.jpg" alt="" />
-				<img src="images/TepapaTongarewa.jpg.jpg" alt="" />
-				<img src="images/Wellington-CBD.jpg" alt="" />
-				<img src="images/LyallBay.jpg" alt="" />
-				<img src="images/Town.jpg" alt="" />
+	 </header>
+			<div class="slider">
+				<div class="slider-wrapper theme-default">
+					<div id="slider" class="nivoSlider">
+						<img src="images/ITNAC.jpg" alt="" />
+						<img src="images/2.jpg" alt="" />
+						<img src="images/TepapaTongarewa.jpg.jpg" alt="" />
+						<img src="images/Wellington-CBD.jpg" alt="" />
+						<img src="images/LyallBay.jpg" alt="" />
+						<img src="images/Town.jpg" alt="" />
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 <pages-css id="pages-css"><style id="css_masterPage">
 	#comp-j7gi7kz8:not([data-screen-in-hide="done"]){opacity:0}
 	:root{--color_0:255,255,255;--color_27:122,211,244;--color_1:255,255,255;--color_2:0,0,0;--color_3:237,28,36;--color_4:0,136,203;--color_5:255,203,5;--color_6:114,114,114;--color_7:176,176,176;--color_8:255,255,255;--color_28:0,173,239;--color_9:114,114,114;--color_10:176,176,176;--color_11:255,255,255;--color_12:242,242,242;--color_13:199,199,199;--color_14:117,117,117;--color_15:0,0,0;--color_16:241,168,169;--color_17:226,123,125;--color_18:212,19,23;--color_29:0,115,159;--color_19:141,13,15;--color_20:71,6,8;--color_21:177,185,219;--color_22:136,145,182;--color_23:90,101,146;--color_24:26,43,109;--color_25:13,22,55;--color_30:0,58,80;--color_31:245,212,183;--color_32:236,188,146;--color_33:226,134,54;--color_34:151,89,36;--color_35:75,45,18;--font_0:normal normal normal 66px/1.4em spinnaker,sans-serif;--font_1:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;--font_2:normal normal normal 55px/1.4em spinnaker,sans-serif;--font_3:normal normal normal 40px/1.4em spinnaker,sans-serif;--font_4:normal normal normal 35px/1.4em spinnaker,sans-serif;--font_5:normal normal normal 28px/1.4em spinnaker,sans-serif;--font_6:normal normal normal 22px/1.4em spinnaker,sans-serif;--font_7:normal normal normal 18px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;--font_8:normal normal normal 16px/1.7em helvetica-w01-light,helvetica-w02-light,sans-serif;--font_9:normal normal normal 13px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;--font_10:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;--wix-ads-height:50px;--wix-ads-top-height:50px;--site-width:980px;--above-all-z-index:100000;--portals-z-index:100001;--minViewportSize:320;--color_26:166,227,250;--maxViewportSize:1920}.font_0{font:var(--font_0);color:rgb(var(--color_24));letter-spacing:0em}.font_1{font:var(--font_1);color:rgb(var(--color_14));letter-spacing:0em}.font_2{font:var(--font_2);color:rgb(var(--color_24));letter-spacing:0em}.font_3{font:var(--font_3);color:rgb(var(--color_24));letter-spacing:0em}.font_4{font:var(--font_4);color:rgb(var(--color_24));letter-spacing:0em}.font_5{font:var(--font_5);color:rgb(var(--color_24));letter-spacing:0em}.font_6{font:var(--font_6);color:rgb(var(--color_24));letter-spacing:0em}.font_7{font:var(--font_7);color:rgb(var(--color_2));letter-spacing:0em}.font_8{font:var(--font_8);color:rgb(var(--color_15));letter-spacing:0.03em}.font_9{font:var(--font_9);color:rgb(var(--color_2));letter-spacing:0em}.font_10{font:var(--font_10);color:rgb(var(--color_14));letter-spacing:0em}.color_0{color:rgb(var(--color_0))}.color_1{color:rgb(var(--color_1))}.color_2{color:rgb(var(--color_2))}.color_3{color:rgb(var(--color_3))}.color_4{color:rgb(var(--color_4))}.color_5{color:rgb(var(--color_5))}.color_6{color:rgb(var(--color_6))}.color_7{color:rgb(var(--color_7))}.color_8{color:rgb(var(--color_8))}.color_9{color:rgb(var(--color_9))}.color_10{color:rgb(var(--color_10))}.color_11{color:rgb(var(--color_11))}.color_12{color:rgb(var(--color_12))}.color_13{color:rgb(var(--color_13))}.color_14{color:rgb(var(--color_14))}.color_15{color:rgb(var(--color_15))}.color_16{color:rgb(var(--color_16))}.color_17{color:rgb(var(--color_17))}.color_18{color:rgb(var(--color_18))}.color_19{color:rgb(var(--color_19))}.color_20{color:rgb(var(--color_20))}.color_21{color:rgb(var(--color_21))}.color_22{color:rgb(var(--color_22))}.color_23{color:rgb(var(--color_23))}.color_24{color:rgb(var(--color_24))}.color_25{color:rgb(var(--color_25))}.color_26{color:rgb(var(--color_26))}.color_27{color:rgb(var(--color_27))}.color_28{color:rgb(var(--color_28))}.color_29{color:rgb(var(--color_29))}.color_30{color:rgb(var(--color_30))}.color_31{color:rgb(var(--color_31))}.color_32{color:rgb(var(--color_32))}.color_33{color:rgb(var(--color_33))}.color_34{color:rgb(var(--color_34))}.color_35{color:rgb(var(--color_35))}.backcolor_0{background-color:rgb(var(--color_0))}.backcolor_1{background-color:rgb(var(--color_1))}.backcolor_2{background-color:rgb(var(--color_2))}.backcolor_3{background-color:rgb(var(--color_3))}.backcolor_4{background-color:rgb(var(--color_4))}.backcolor_5{background-color:rgb(var(--color_5))}.backcolor_6{background-color:rgb(var(--color_6))}.backcolor_7{background-color:rgb(var(--color_7))}.backcolor_8{background-color:rgb(var(--color_8))}.backcolor_9{background-color:rgb(var(--color_9))}.backcolor_10{background-color:rgb(var(--color_10))}.backcolor_11{background-color:rgb(var(--color_11))}.backcolor_12{background-color:rgb(var(--color_12))}.backcolor_13{background-color:rgb(var(--color_13))}.backcolor_14{background-color:rgb(var(--color_14))}.backcolor_15{background-color:rgb(var(--color_15))}.backcolor_16{background-color:rgb(var(--color_16))}.backcolor_17{background-color:rgb(var(--color_17))}.backcolor_18{background-color:rgb(var(--color_18))}.backcolor_19{background-color:rgb(var(--color_19))}.backcolor_20{background-color:rgb(var(--color_20))}.backcolor_21{background-color:rgb(var(--color_21))}.backcolor_22{background-color:rgb(var(--color_22))}.backcolor_23{background-color:rgb(var(--color_23))}.backcolor_24{background-color:rgb(var(--color_24))}.backcolor_25{background-color:rgb(var(--color_25))}.backcolor_26{background-color:rgb(var(--color_26))}.backcolor_27{background-color:rgb(var(--color_27))}.backcolor_28{background-color:rgb(var(--color_28))}.backcolor_29{background-color:rgb(var(--color_29))}.backcolor_30{background-color:rgb(var(--color_30))}.backcolor_31{background-color:rgb(var(--color_31))}.backcolor_32{background-color:rgb(var(--color_32))}.backcolor_33{background-color:rgb(var(--color_33))}.backcolor_34{background-color:rgb(var(--color_34))}.backcolor_35{background-color:rgb(var(--color_35))}#SITE_CONTAINER.focus-ring-active :not(.has-custom-focus):not(.ignore-focus):focus, #SITE_CONTAINER.focus-ring-active :not(.has-custom-focus):not(.ignore-focus):focus ~ .wixSdkShowFocusOnSibling{box-shadow:0 0 0 1px #ffffff, 0 0 0 3px #116dff !important;z-index:1}[data-mesh-id=SITE_HEADERinlineContent]{height:auto;width:100%}[data-mesh-id=SITE_HEADERinlineContent-gridContainer]{position:static;display:grid;height:auto;width:100%;min-height:auto;grid-template-rows:1fr;grid-template-columns:100%}[data-mesh-id=SITE_HEADERinlineContent-gridContainer] > [id="comp-l8p6hym6"]{position:relative;margin:0px 0px 6px calc((100% - 980px) * 0.5);left:-232px;grid-area:1 / 1 / 2 / 2;justify-self:start;align-self:start}[data-mesh-id=SITE_HEADERinlineContent-gridContainer] > [id="comp-j6gqwjnf"]{position:relative;margin:39px 0px 39px calc((100% - 980px) * 0.5);left:190px;grid-area:1 / 1 / 2 / 2;justify-self:start;align-self:start}[data-mesh-id=SITE_FOOTERinlineContent]{height:auto;width:100%}[data-mesh-id=SITE_FOOTERinlineContent-gridContainer]{position:static;display:grid;height:auto;width:100%;min-height:750px;grid-template-rows:repeat(3, min-content) 1fr;grid-template-columns:100%}[data-mesh-id="comp-j70tm1gq-rotated-wrapper"] > [id="comp-j70tm1gq"]{position:relative;left:897px;top:0px}[data-mesh-id=SITE_FOOTERinlineContent-gridContainer] > [id="comp-j7gi7kz8"]{position:relative;margin:63px 0px 37px calc((100% - 980px) * 0.5);left:172px;grid-area:1 / 1 / 2 / 2;justify-self:start;align-self:start}[data-mesh-id=SITE_FOOTERinlineContent-gridContainer] > [id="comp-jx4o6f57"]{position:relative;margin:0px 0px 10px calc((100% - 980px) * 0.5);left:34px;grid-area:2 / 1 / 3 / 2;justify-self:start;align-self:start}[data-mesh-id=comp-j70tm1gq-rotated-wrapper]{position:static;height:16px;width:0;margin:0px 0px 10px calc((100% - 980px) * 0.5);grid-area:4 / 1 / 5 / 2;justify-self:start;align-self:start}[data-mesh-id=SITE_FOOTERinlineContent-wedge-4]{visibility:hidden;height:637px;width:0;grid-area:1 / 1 / 4 / 2}[data-mesh-id=comp-jx4o6f57inlineContent]{height:auto;width:915px}[data-mesh-id=comp-jx4o6f57inlineContent-gridContainer]{position:static;display:grid;height:auto;width:100%;min-height:auto;grid-template-rows:1fr;grid-template-columns:100%}[data-mesh-id=comp-jx4o6f57inlineContent-gridContainer] > [id="comp-jx4o6f6h"]{position:relative;margin:0px 0px 0px 0;left:0px;grid-area:1 / 1 / 2 / 2;justify-self:start;align-self:start}[data-mesh-id=comp-jx4o6f6hinlineContent]{height:auto;width:915px}[data-mesh-id=comp-jx4o6f6hinlineContent-gridContainer]{position:static;display:grid;height:auto;width:100%;min-height:auto;grid-template-rows:repeat(4, min-content) 1fr;grid-template-columns:100%}[data-mesh-id=comp-jx4o6f6hinlineContent-gridContainer] > [id="comp-khyv6dpc"]{position:relative;margin:0px 0px 18px 0;left:26px;grid-area:1 / 1 / 2 / 2;justify-self:start;align-self:start}[data-mesh-id=comp-jx4o6f6hinlineContent-gridContainer] > [id="comp-jx4o6f6x"]{position:relative;margin:0px 0px 18px 0;left:472px;grid-area:1 / 1 / 2 / 2;justify-self:start;align-self:start}[data-mesh-id=comp-jx4o6f6hinlineContent-gridContainer] > [id="comp-jx4o6f7a"]{position:relative;margin:0px 0px 20px 0;left:26px;grid-area:2 / 1 / 3 / 2;justify-self:start;align-self:start}[data-mesh-id=comp-jx4o6f6hinlineContent-gridContainer] > [id="comp-jx4o6f80"]{position:relative;margin:0px 0px 16px 0;left:26px;grid-area:3 / 1 / 4 / 2;justify-self:start;align-self:start}[data-mesh-id=comp-jx4o6f6hinlineContent-gridContainer] > [id="comp-jx4o6f9p"]{position:relative;margin:0px 0px 12px 0;left:385px;grid-area:4 / 1 / 5 / 2;justify-self:start;align-self:start}[data-mesh-id=comp-jx4o6f6hinlineContent-gridContainer] > [id="comp-jx4o6fa2"]{position:relative;margin:0px 0px 5px 0;left:199px;grid-area:5 / 1 / 6 / 2;justify-self:start;align-self:start}#comp-l8p6hym6{width:134px;height:122px}#comp-j6gqwjnf{width:790px;height:50px}#comp-j7gi7kz8{width:635px;height:41px}#comp-j70tm1gq{transform:rotate(180deg);width:26px;height:15px}#comp-khyv6dpc{width:418px;height:67px}#comp-jx4o6f6x{width:418px;height:67px}#comp-jx4o6f7a{width:864px;height:67px}#comp-jx4o6f80{width:864px;height:124px}#comp-jx4o6f9p{width:142px;height:40px}#comp-jx4o6fa2{width:510px;height:19px}#masterPage{left:0;margin-left:0;width:100%;min-width:980px}#SITE_HEADER{left:0;margin-left:0;width:100%;min-width:980px;--pinned-layer-in-container:50;--above-all-in-container:49}#PAGES_CONTAINER{left:0;margin-left:0;width:100%;min-width:980px;--pinned-layer-in-container:51;--above-all-in-container:49}#SITE_FOOTER{left:0;margin-left:0;width:100%;min-width:980px;--pinned-layer-in-container:52;--above-all-in-container:49}#SITE_PAGES{left:0;margin-left:0;width:100%;min-width:980px}#comp-jx4o6f57{width:915px}#comp-jx4o6f6h{width:915px}#masterPage.landingPage #SITE_HEADER{display:none}#masterPage.landingPage #SITE_FOOTER{display:none}#masterPage.landingPage #SITE_HEADER-placeholder{display:none}#masterPage.landingPage #SITE_FOOTER-placeholder{display:none}#masterPage:not(.landingPage) #PAGES_CONTAINER{margin-top:0px;margin-bottom:0px}
@@ -197,23 +219,69 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
 
 #comp-j7gdpzlb { --min-height:299px;height:auto }#comp-l8p98ytl { --min-height:20px;height:auto }#comp-l8p89nbn { height:auto }#c1dmp { width:auto;min-height:40px }#comp-l8p667q91 { --bg-overlay-color:transparent;--bg-gradient:none;min-width:980px }#comp-l8p667q9 { --bg-overlay-color:transparent;--bg-gradient:none;min-width:980px }#comp-j7gg2q8f { --shd:0 0 0 rgba(0, 0, 0, 0.6);--dotsColor:var(--color_24);--arrowColor:var(--color_24);--rd:0px;--brw:0px;--brd:var(--color_11);--alpha-brd:1;--alpha-arrowColor:1;--alpha-dotsColor:1;height:538px;--nav-dot-section-display:block;--nav-dot-section-bottom-margin:50px;--nav-dot-margin:6px;--nav-dot-size:6px;--nav-dot-size-selected:9px;--nav-button-width:83.33333333333334px;--nav-button-offset:100px;--nav-button-display:block;--slides-overflow:visible;--transition-duration:1000ms }#comp-j7gex564 { --bg-overlay-color:transparent;--bg-gradient:none;--padding:0px;--margin:0px;min-width:980px;--firstChildMarginTop:-1px;--lastChildMarginBottom:-1px }#comp-j82zcvl7 { --bg-overlay-color:transparent;--bg-gradient:none;--padding:0px;--margin:0px;min-width:980px;--firstChildMarginTop:-1px;--lastChildMarginBottom:-1px }#comp-l8pdsbku { --bg-overlay-color:transparent;--bg-gradient:none;--padding:0px;--margin:0px;min-width:980px;--firstChildMarginTop:-1px;--lastChildMarginBottom:-1px }#comp-j7gex57b { --bg-overlay-color:rgb(var(--color_24));--bg-gradient:none;width:100%;--column-width:980px;--column-flex:980 }#comp-j82zcvmc { --bg-overlay-color:transparent;--bg-gradient:none;width:100%;--column-width:980px;--column-flex:980 }#comp-l8pdsbq7 { --bg-overlay-color:rgb(250, 250, 250);--bg-gradient:none;--fill-layer-image-opacity:1;width:100%;--column-width:980px;--column-flex:980 }#pageBackground_c1dmp { --bg-position:absolute;--bg-overlay-color:rgb(var(--color_11));--bg-gradient:none;--fill-layer-background-overlay-color:transparent;--fill-layer-background-overlay-position:absolute }#comp-j7ghhy7a { position:absolute;width:100%;height:100%;--bg-overlay-color:rgb(var(--color_12));--bg-gradient:none;--fill-layer-image-opacity:1 }#comp-j7gg2q9h { position:absolute;width:100%;height:100%;--bg-overlay-color:rgb(var(--color_12));--bg-gradient:none;--fill-layer-image-opacity:1 }#comp-j7ghi9nn { position:absolute;width:100%;height:100%;--bg-overlay-color:rgb(var(--color_12));--bg-gradient:none;--fill-layer-image-opacity:1 }#comp-l8p6g1b4 { position:absolute;width:100%;height:100%;--bg-overlay-color:rgb(var(--color_12));--bg-gradient:none;--fill-layer-image-opacity:1 }#comp-l8p6g29u { position:absolute;width:100%;height:100%;--bg-overlay-color:rgb(var(--color_12));--bg-gradient:none;--fill-layer-image-opacity:1 }#comp-l8p6g2r6 { position:absolute;width:100%;height:100%;--bg-overlay-color:rgb(var(--color_12));--bg-gradient:none;--fill-layer-image-opacity:1 }
 </style></pages-css>
-<div data-testid="columns" class="_1uldx"><div id="comp-j82zcvmc" class="_1vNJf"><div id="bgLayers_comp-j82zcvmc" data-hook="bgLayers" class="_3wnIc"><div data-testid="colorUnderlay" class="_3KzuS _3SQN-"></div><div id="bgMedia_comp-j82zcvmc" class="_2GUhU"></div></div><div data-mesh-id="comp-j82zcvmcinlineContent" data-testid="inline-content" class=""><div data-mesh-id="comp-j82zcvmcinlineContent-gridContainer" data-testid="mesh-container-content"><div id="comp-l8p98ytl" class="_2Hij5 _3bcaz" data-testid="richTextElement"><p class="font_8" style="font-size:23px; text-align:center;"><span style="color:#336699;"><span style="font-weight:bold;"><span style="font-size:62px;">The 1st International Workshop ICT for Combating Climate Crisis(ICT4C3)</span></span>
+<p class="font_8" style="font-size:10px;"><span style="font-weight:bold;"><span style="font-size:22px;">&nbsp; &nbsp;</span></span></p>
 
-<p class="font_8" style="font-size:25px; text-align:center;"><span style="color:#000000;"><span style="font-size:23px;">in conjunction with The 32nd </span></span></p>
+<div data-testid="columns" class="_1uldx"><div id="comp-j82zcvmc" class="_1vNJf"><div id="bgLayers_comp-j82zcvmc" data-hook="bgLayers" class="_3wnIc"><div data-testid="colorUnderlay" class="_3KzuS _3SQN-"></div><div id="bgMedia_comp-j82zcvmc" class="_2GUhU"></div></div><div data-mesh-id="comp-j82zcvmcinlineContent" data-testid="inline-content" class=""><div data-mesh-id="comp-j82zcvmcinlineContent-gridContainer" data-testid="mesh-container-content"><div id="comp-l8p98ytl" class="_2Hij5 _3bcaz" data-testid="richTextElement"></div><p class="font_8" style="font-size:20px; text-align:center;"><span style="color:#336699;"><span style="font-weight:bold;"><span style="font-size:62px;">CALL FOR PAPERS</span></span>
 
-<p class="font_8" style="font-size:23px; text-align:center;"><span style="color:#000000;"><span style="font-size:23px;">International Telecommunication Networks and </span></span></p>
+<p class="font_8" style="font-size:10px;"><span style="font-weight:bold;"><span style="font-size:22px;">&nbsp; &nbsp;</span></span></p>
 
-<p class="font_8" style="font-size:23px; text-align:center;"><span style="color:#000000;"><span style="font-size:23px;">Application Conference (ITNAC 2022 <span style="text-decoration:underline;"><a href="https://itnac.org.au/" target="_blank" rel="noreferrer noopener">https://itnac.org.au</a></span>) &nbsp;</span></span></p>
+<p class="font_8" style="font-size:20px; text-align:center;"><span style="color:#000000;"><span style="font-weight:bold;"><span style="font-size:23px;">- The First International Workshop on ICT</span></span></span></p>
 
-<p class="font_8" style="font-size:23px; text-align:center;"><span style="color:#000000;"><span style="font-weight:bold;"><span style="font-size:23px;">Nov 30-Dec 2, 2022 in Wellington, New Zealand&nbsp;</span></span></span></p>
+<p class="font_8" style="font-size:20px; text-align:center;"><span style="color:#000000;"><span style="font-weight:bold;"><span style="font-size:23px;">for Combating Climate Crisis (ICT4C3)&nbsp;</span></span></span></p>
 
-<p class="font_8" style="font-size:23px; text-align:center;"><span style="color:#000000;"><span style="font-size:23px;"><span style="font-weight:bold;">&nbsp;Hybrid Workshop - online and face-to-face&nbsp;</span>&nbsp;</span></span></p></div><div id="comp-l8p89nbn" class="_2Hij5 _3bcaz" data-testid="richTextElement"><p class="font_8" style="font-size:20px;"><span style="font-size:20px;"><span class="wixGuard">​</span></span></p>
+<p class="font_8" style="font-size:20px;"><span class="color_15"><span style="font-size:35px;"><span class="">​</span></span></span></p>
 
-<p class="font_8" style="font-size:15px;"><span style="font-size:20px;">The accepted ICT4C3 Workshop papers will be with the ITNAC Conference contents submitted for inclusion into IEEE Xplore, Google Scholar and other Abstracting and Indexing (A&amp;I) databases. The Workshop is technically co-sponsored by the IEEE Special Interest Group on Humanitarian Technology (SIGHT), IEEE Vehicular Technology Society (VTS) and IEEE Communications Society (ComSoc) Technical Committee on Big Data (TCBD). We welcome the support of the IEEE and encourage participants to join the IEEE and IEEE Society Technical Committees.&nbsp;</span></p>
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Over recent years, it has become widely accepted that our humanity has entered the &ldquo;Anthropocene &nbsp;</span></p>
 
-<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Authors of the Selected Papers will be invited to submit their extended versions to the related Special Issues of The Future Internet Journal (<span style="text-decoration:underline;"><a href="https://www.mdpi.com/journal/futureinternet)" target="_blank" rel="noreferrer noopener">https://www.mdpi.com/journal/futureinternet)</a></span> &nbsp;which is published by Multidisciplinary Digital Publishing Institute (MDPI), and The Green Technologies and Sustainability Journal&nbsp; <span style="text-decoration:underline;"><a href="https://www.keaipublishing.com/en/journals/green-technologies-and-sustainability/" target="_blank" rel="noreferrer noopener">https://www.keaipublishing.com/en/journals/green-technologies-and-sustainability/</a></span>&nbsp; which is co-published by Elsevier and China Science Publishing &amp; Media Ltd., jointly called KeAi.&nbsp;</span></p></div></div></div></div></div></section>
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;epoch&rdquo; during which humankind has had a significant impact on the Earth, including its ecosystems.&nbsp;</span></p>
 
-<p class="font_8" style="font-size:22px;"><span style="font-weight:bold;"><span style="font-size:22px;">&nbsp; &nbsp;</span></span></p>
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One manifestation of this impact has been global climate change. The climate change is the defining &nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;crisis of our time and it is happening even more quickly than we feared. But we are far from powerless &nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in the face of these global threats. As Secretary-General Ant&oacute;nio Guterres pointed out in September&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019, &ldquo;the climate emergency is a race we are losing, but it is a race we can win&rdquo;. No any corner&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of our Earth is immune from the devastating consequences of climate change. Rising temperatures &nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are fuelling environmental degradation, natural disasters, weather extremes, food and water insecurity,&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;economic disruption and conflict. Sea levels are rising, the Arctic is melting, coral reefs are dying, oceans&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are acidifying, and forests are burning. It is clear that business as usual is not good enough. As the infinite &nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cost of climate crisis reaches irreversible highs, now is the time for bold collective actions.&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;"><span class="">​</span></span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At the same time, information and communication technologies (ICTs) are being rapidly deployed around &nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the world. The ICTs can reduce energy use, cut greenhouse gas emissions, and build resilience to combat&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the climate crisis. According to a recent report, SMARTer 2030: ICT Solutions for 21st Century Challenges,&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICT can slash global greenhouse gas emissions by 20% by 2030, thus holding them at 2015 levels, while&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generating over USD 11 trillion in economic benefits and connecting an additional 2.5 billion people to&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the knowledge economy by 2030.&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;"><span class="">​</span></span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, this workshop aims to bring together the leading researchers to innovate and advance ICT for&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;combating climate crisis, and also with government and industry representatives, including policy &ndash; and&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decision- makers with an interest in adopting ICT to address the climate crisis, as well as the ICT&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;practitioners working on ICT solutions on climate crisis and developers of sustainable ICT systems&nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or applications for combating climate crisis. &nbsp;</span></p>
+
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;"><span class="">​</span></span></p>
+<p class="font_8" style="font-size:20px;"><span style="font-size:20px;"><span class="">​</span></span></p>
+
  <footer>
      <div class="footer no-mp">
 		<div class="foot_link">
